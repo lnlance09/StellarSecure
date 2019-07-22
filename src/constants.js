@@ -1,0 +1,16 @@
+export const GET_BALANCES = 'app:GET_BALANCES';
+export const GET_CURRENT_PRICE = 'app:GET_CURRENT_PRICE';
+export const GET_HISTORICAL_PRICES = 'app:GET_HISTORICAL_PRICES';
+export const GET_QR_CODE = 'app:GET_QR_CODE';
+export const GET_TRANSACTIONS = 'app:GET_TRANSACTIONS';
+export const LOGOUT = 'app:LOGOUT';
+export const SEND_STELLAR = 'app:SEND_STELLAR';
+export const SET_ADDRESS_VALUE = 'app:SET_ADDRESS_VALUE';
+export const SET_AMOUNT_VALUE = 'app:SET_AMOUNT_VALUE';
+export const SET_LANGUAGE = 'app:SET_LANGUAGE';
+export const SET_MEMO_VALUE = 'app:SET_MEMO_VALUE';
+export const SET_TO_INITIAL = 'app:SET_TO_INITIAL';
+export const SET_WALLET_INFO = 'app:SET_WALLET_INFO';
+export const TOGGLE_FORM_LOADING = 'app:TOGGLE_FORM_LOADING';
+export const TOGGLE_QR_CODE = 'app:TOGGLE_QR_CODE';
+export const TOGGLE_TFA_AUTH = 'app:TOGGLE_TFA_AUTH';

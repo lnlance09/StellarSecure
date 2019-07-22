@@ -1,0 +1,95 @@
+@font-face {
+  font-family: jackinput;
+  src: url('TechnaSans-Regular.otf');
+}
+
+.headerItem {
+    font-family: jackinput;
+    font-size: 1.3em;
+}
+
+.HeroContainer.ui.container {
+  background-image: url('../images/rocket-new.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 480px;
+  margin: 0 !important;
+  position: relative;
+  top: 0;
+}
+
+.pricesSegment {
+  .grid.column {
+    .header {
+      color: #191919;
+      font-size: 3.1rem !important;
+
+      .sub.header {
+        color: #191919;
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+
+.rangeSelector {
+  .label {
+    cursor: pointer;
+  }
+}
+
+.header.huge {
+  .icon {
+    font-size: 24px !important;
+  }
+}
+
+.radio-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 7px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menuHeader {
+  border-bottom: dotted 2px #ccc !important;
+  margin-bottom: 7px !important;
+  padding: 2px 0 4px 0 !important;
+
+  .container {
+    padding: 0 12%;
+
+    @media only screen and (max-width: 1025px) {
+      padding: 0 2%;
+    }
+  }
+}
+
+.menuHeader, .footerSegment {
+  background: #0B2E59 !important;
+}
+
+.footerSegment .container {
+  padding: 0 13%;
+
+  @media only screen and (max-width: 1025px) {
+    padding: 0 3%;
+  }
+}
+
+.walletOverview {
+  min-height: 700px;
+  padding: 0 13%;
+
+  @media only screen and (max-width: 1025px) {
+    padding: 0 3%;
+  }
+}
+
+.menuHeader .container .right.item {
+  .visible.menu.transition {
+    margin-top: 23px;
+  }
+}

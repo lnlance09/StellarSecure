@@ -1,0 +1,150 @@
+{
+	"en": {
+		"about": "About",
+		"acctWarningHeader": "Don't lose access to your account!",
+		"acctWarningContent": "Make sure that you have all three of these items saved in a secure place.",
+		"addressPlaceholder": "Enter a valid address",
+		"addressSubheader": "This is your wallet address",
+		"amountPlaceholder": "Enter an amount",
+		"authenticate": "Authenticate",
+		"completeSetup": "Complete setup",
+		"connect": "Connect",
+		"contactHeader": "We'd love to hear from you!",
+		"contactMsg": "Send us a message to let us know what's on your mind",
+		"contactUs": "Contact Us",
+		"convert": "Convert",
+		"copyright": "Copyright",
+		"createWallet": "Create Wallet",
+		"date": "Date",
+		"donate": "Donate",
+		"enterPrivateKey": "Enter your private key",
+		"enterTfaCode": "Enter your 2FA code",
+		"existingWallet": "Existing Wallet",
+		"grids": [
+			{
+				"header": "One Stop Spot For Everything Stellar",
+				"content": "Check out current and historical prices. Send and receive Stellar. View transaction history."
+			},
+			{
+				"header": "Send and Receive",
+				"content": "Quickly send and recive Stellar. Now with Two-factor authentication."
+			},
+			{
+				"header": "Safe and Secure",
+				"content": "All Stellar transactions are done entirely in the browser."
+			},
+			{
+				"header": "Two-Factor Authentication",
+				"content": "No need to provide an username, password, or email. Just your private key and your google authenticator code in you wish."
+			},
+			{
+				"header": "Multiplatform",
+				"content": "Stellar Secure can be used on any device that supports JavaScript! With bleeding edge responsive design, it can be used as like its own app."
+			},
+			{
+				"header": "Market Values",
+				"content": "Stellar Secure uses coinmarketcap.com's tickers to display Stellar's values so you can easily track its price."
+			},
+			{
+				"header": "Real Time Balances",
+				"content": "Your balance is updated each time you send or receive Stellar - you can also see your balance in USD's or EUR's worth."
+			}
+		],
+		"heroSubheader": "Storing Stellar Never Felt So Good!",
+		"inactiveContent": "To activate it, send at least 1 lumen (XLM) to the Stellar public key displayed above.",
+		"inactiveHeader": "This account is currently inactive",
+		"incorrectCodeMsg": "That code is incorrect",
+		"logout": "Logout",
+		"madeFooterText": "Made in Germany",
+		"memoPlaceholder": "Memo text up to 28 characters (Optional)",
+		"myWallet": "My Wallet",
+		"notAffiliated": "we are not affiliated with the Stellar Foundation.",
+		"price": "Price",
+		"publicKey": "Public key",
+		"secretKey": "Secret key",
+		"send": "send",
+		"submit": "Submit",
+		"tfaMsgContent": "For more info on how to set up, click here",
+		"tfaMsgHeader": "This is your QR code that is used for two-factor authentication",
+		"tfaPlaceholder": "Enter your two-factor authentication code",
+		"tfaSegmentHeader": "Two-Factor Authentication",
+		"toastMsg": "Your transaction has been completed!",
+		"transactions": "Transactions",
+		"unlock": "Unlock",
+		"yourWalletInfo": "Your Wallet Info"
+	},
+	"de": {
+		"about": "Über",
+		"acctWarningHeader": "Verliere nicht den zugriff auf dein Konto!",
+		"acctWarningContent": "Stellen sie sicher, dass sie alle drei elemente an einem sicheren ort gespeichert haben.",
+		"addressPlaceholder": "Geben sie eine gültige adresse ein",
+		"addressSubheader": "Dies ist ihre brieftaschenadresse",
+		"amountPlaceholder": "Geben sie einen betrag ein",
+		"authenticate": "Authentifizieren",
+		"completeSetup": "Schließen sie das setup ab",
+		"connect": "Verbinden",
+		"contactHeader": "Wir würden gerne von ihnen hören!",
+		"contactMsg": "Senden sie uns eine nachricht, um uns ihre meinung mitzuteilen",
+		"contactUs": "Kontaktiere uns",
+		"convert": "Konvertieren",
+		"copyright": "Urheberrechte",
+		"createWallet": "Brieftasche Erstellen",
+		"date": "Datum",
+		"donate": "Spenden",
+		"enterPrivateKey": "Geben sie ihren privaten schlüssel ein",
+		"enterTfaCode": "Geben sie ihren 2FA-Code ein",
+		"existingWallet": "Bestehende Brieftasche",
+		"grids": [
+			{
+				"header": "Eine Anlaufstelle für alles Stellar",
+				"content": "Informieren sie sich über aktuelle und historische preise. Senden und empfangen sie Stellar. Transaktionsverlauf anzeigen."
+			},
+			{
+				"header": "Senden und Empfangen",
+				"content": "Senden und empfangen sie Stellar schnell. Jetzt mit Zwei-Faktor-Authentifizierung."
+			},
+			{
+				"header": "Gesichert und Geladen",
+				"content": "All Stellar transactions are done entirely in the browser."
+			},
+			{
+				"header": "Zwei-Faktor-Authentifizierung",
+				"content": "Es ist nicht erforderlich, einen benutzernamen, ein passwort oder eine E-Mail-adresse anzugeben. Nur ihren privaten schlüssel und ihren Google-Authentifizierungscode, den sie wünschen."
+			},
+			{
+				"header": "Multiplattform",
+				"content": "Stellar secure kann auf jedem gerät verwendet werden, das JavaScript unterstützt! Mit seinem auf den neuesten stand reagierenden design kann es wie eine eigene app verwendet werden."
+			},
+			{
+				"header": "Marktwerte",
+				"content": "Stellar Secure verwendet die ticker von coinmarketcap.com, um die Stellar-werte anzuzeigen, sodass sie den preis leicht nachverfolgen können."
+			},
+			{
+				"header": "Echtzeitbilanzen",
+				"content": "Ihr guthaben wird jedes mal aktualisiert, wenn sie Stellar senden oder empfangen. Sie können ihr guthaben auch in USD oder EUR anzeigen."
+			}
+		],
+		"heroSubheader": "Das speichern von Stellar hat sich noch nie so gut angefühlt!",
+		"inactiveContent": "Senden sie zum Aktivieren mindestens 1 Lumen (XLM) an den oben angezeigten öffentlichen Stellar-schlüssel.",
+		"inactiveHeader": "Dieses konto ist derzeit inaktiv",
+		"incorrectCodeMsg": "Dieser code ist falsch",
+		"logout": "Ausloggen",
+		"madeFooterText": "Hergestellt in Deutschland",
+		"memoPlaceholder": "Notiztext mit bis zu 28 zeichen (wahlweise)",
+		"myWallet": "Mein Geldbeutel",
+		"notAffiliated": "wir sind nicht mit der Stellar Foundation verbunden.",
+		"price": "Preis",
+		"publicKey": "Öffentlicher schlüssel",
+		"secretKey": "Geheimer schlüssel",
+		"send": "Senden",
+		"submit": "Einreichen",
+		"tfaMsgContent": "For more info on how to set up, click here",
+		"tfaMsgHeader": "Dies ist ihr QR-Code, der für die Zwei-Faktor-Authentifizierung verwendet wird",
+		"tfaPlaceholder": "Geben sie ihren Zwei-Faktor-Authentifizierungscode ein",
+		"tfaSegmentHeader": "Zwei-Faktor-Authentifizierungscode",
+		"toastMsg": "Ihre transaktion wurde abgeschlossen!",
+		"transactions": "Transaktionen",
+		"unlock": "Freischalten",
+		"yourWalletInfo": "Ihre geldbörseninfo"
+	}
+}
