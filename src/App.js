@@ -50,6 +50,7 @@ import {
 	Radio,
 	Responsive,
 	Segment,
+	Sidebar,
 	Table,
 	Visibility,
 } from 'semantic-ui-react';
@@ -74,6 +75,7 @@ class App extends Component {
 			secretKeyVal: '',
 			sendError: false,
 			sendErrorMsg: false,
+			sidebarVisible: false,
 			siteName: 'Stellar Secure',
 			start: '1407196800',
 			timeCode: '',
@@ -244,6 +246,8 @@ class App extends Component {
 
 	toggleQrCode = () => this.props.toggleQrCode({ enable: !this.props.tfaEnabled, uniqueId: this.props.uniqueId });
 
+	toggleSidebar = () => this.setState({ sidebarVisible: !this.state.sidebarVisible });
+
 	render() {
 		const {
 			existingWalletModalOpen,
@@ -254,6 +258,7 @@ class App extends Component {
 			secretKeyVal,
 			sendError,
 			sendErrorMsg,
+			sidebarVisible,
 			siteName,
 			timeCode,
 			timeCodeError,
@@ -431,6 +436,62 @@ class App extends Component {
 			</Modal>
 		);
 
+		const SidebarPanel = ({ mobile }) => (
+			<Sidebar
+				as={Menu}
+				animation='overlay'
+				icon='labeled'
+				inverted
+				vertical
+				visible={sidebarVisible}
+			>
+				<Menu.Item>
+					<Button
+						color='green'
+						fluid
+						onClick={() => {
+							this.createWallet();
+							this.generateSecret();
+							this.toggleNewModal();
+							this.toggleSidebar();
+						}}
+						size='medium'
+					>
+						{text.createWallet}
+					</Button>
+				</Menu.Item>
+				<Menu.Item
+				>
+					<Button
+						color='blue'
+						fluid
+						onClick={() => {
+							this.toggleExistingModal();
+							this.toggleSidebar();
+						}}
+						size='medium'
+					>
+						{text.existingWallet}
+					</Button>
+				</Menu.Item>
+				<Menu.Item textAlign='left'>
+					<Dropdown
+						inverted
+						onChange={(e, { value }) => {
+							this.props.setLanguage({ lang: value });
+							this.toggleSidebar();
+						}}
+						options={langOptions}
+						placeholder='Language'
+						selection
+					/>
+				</Menu.Item>
+				<Menu.Item onClick={() => this.toggleSidebar()}>
+					Close
+				</Menu.Item>
+			</Sidebar>
+		);
+
 		const Footer = (
 			<Segment className='footerSegment' inverted vertical style={{ padding: '3em 0em' }}>
 				<Container style={{ width: '100%' }}>
@@ -451,7 +512,7 @@ class App extends Component {
 									{text.madeFooterText} {' '} <Flag name='de' />
 								</p>
 								<p style={{ wordBreak: 'break-all' }}>
-									{text.donate}: GCOQAWJHY3ROVKLU7TAE75LC524SCARFA4EOBRSTVGY4G2TRNYJZ4GJ2
+									{text.donate}: GBNPPGJ7V4SJI3JZ4GXXVCBPYF5KXA3GZDCZYULPITJ7QDKCYMZFAIAG
 								</p>
 							</Grid.Column>
 						</Grid.Row>
@@ -489,26 +550,29 @@ class App extends Component {
 						marginTop: mobile ? '0.5em' : '12em'
 					}}
 				/>
-				<Button
-					color='green'
-					onClick={() => {
-						this.createWallet();
-						this.generateSecret();
-						this.toggleNewModal();
-					}}
-					size='huge'
-				>
-					{text.createWallet}
-				</Button>
-				<Button
-					color='blue'
-					onClick={() => {
-						this.toggleExistingModal();
-					}}
-					size='huge'
-				>
-					{text.existingWallet}
-				</Button>
+				<Button.Group>
+					<Button
+						color='green'
+						onClick={() => {
+							this.createWallet();
+							this.generateSecret();
+							this.toggleNewModal();
+						}}
+						size={mobile ? 'large' : 'huge'}
+					>
+						{text.createWallet}
+					</Button>
+					<Button
+						color='blue'
+						onClick={() => {
+							this.toggleExistingModal();
+						}}
+						size={mobile ? 'large' : 'huge'}
+					>
+						{text.existingWallet}
+					</Button>
+				</Button.Group>
+				<SidebarPanel mobile={mobile} />
 			</Container>
 		);
 
@@ -870,19 +934,15 @@ class App extends Component {
 								<Icon color='green' name='rocket' />
 								{siteName}
 							</Menu.Item>
-							<Menu.Item position='right' style={{ margin: '0' }}>
-								<Dropdown
-									onChange={(e, { value }) => {
-										this.props.setLanguage({ lang: value });
-									}}
-									options={langOptions}
-									style={{ marginRight: '20px' }}
-									trigger={trigger}
+							<Menu.Item position='right' style={{ lineHeight: '0.5', margin: '0' }}>
+								<Icon
+									name='sidebar'
+									onClick={this.toggleSidebar}
 								/>
 							</Menu.Item>
 						</Menu>
 						{!authenticated && (
-							<HomepageHeading props={this.props} />
+							<HomepageHeading mobile props={this.props} />
 						)}
 					</Segment>
 
@@ -1064,7 +1124,7 @@ class App extends Component {
 									{text.contactMsg}
 								</p>
 								<p style={{ fontSize: '1.33em' }}>
-									email@mail.com
+									contact@stellarsecure.com
 								</p>
 								<Icon color='blue' name='mail' size='huge' />
 							</Container>

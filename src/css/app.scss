@@ -55,7 +55,7 @@
 
 .menuHeader {
   border-bottom: dotted 2px #ccc !important;
-  margin-bottom: 7px !important;
+  margin-bottom: 8px !important;
   padding: 2px 0 4px 0 !important;
 
   .container {
@@ -64,6 +64,10 @@
     @media only screen and (max-width: 1025px) {
       padding: 0 2%;
     }
+  }
+
+  @media only screen and (max-width: 1025px) {
+    margin-bottom: 5px !important;
   }
 }
 
